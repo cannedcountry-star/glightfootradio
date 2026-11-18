@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lightfoot Radio</string>
+    <string name="header_title">Gordon Lightfoot Radio</string>
+    <string name="widget_label">Gordon Lightfoot Radio</string>
+    <string name="widget_description">今かかっている曲と、再生／停止ボタン</string>
+    <string name="play">再生</string>
+    <string name="stop">停止</string>
+    <string name="menu">メニュー</string>
+    <string name="history_title">最近かかった曲</string>
+    <string name="history_empty">曲名が届くとここに残ります（タップで YouTube 検索）</string>
+    <string name="footer">配信: Exclusive Radio「Exclusively Gordon Lightfoot」</string>
+    <string name="menu_stream_url">配信URLを変更</string>
+    <string name="menu_station_page">配信元のサイトを開く</string>
+    <string name="stream_url_help">配信元のURLが変わったときはここを書き換えてください。.pls / .m3u のプレイリストURLや、HLS（.m3u8）のURLも使えます。</string>
+    <string name="save">保存</string>
+    <string name="reset">標準に戻す</string>
+    <string name="stream_url_saved">配信URLを保存しました</string>
+    <string name="stream_url_reset">配信URLを標準に戻しました</string>
+    <string name="stream_url_invalid">http:// か https:// で始まるURLを入力してください</string>
+    <string name="stream_url_error">URLを確認できませんでした: %1$s</string>
+</resources>
