@@ -17,14 +17,14 @@
 2. `GLightfootRadio-1.0.N.apk` をダウンロードして開く
 3. 「提供元不明のアプリ」の許可を求められたら、ブラウザ（またはファイルアプリ）に許可する
 
-更新するときは、新しい APK をそのまま上書きインストールできます（毎回同じ署名鍵でビルドしているため）。
+更新について: 署名鍵の Secrets（下記）を登録するまでは、ビルドごとに署名鍵が変わります。新しい版を入れるときは、いったん古いアプリをアンインストールしてからインストールしてください。Secrets を登録すると、以降は上書きインストールできるようになります。
 
 ## ビルド
 
 `main` に push すると GitHub Actions（`.github/workflows/android.yml`）が APK をビルドし、Releases に公開します。
 手動で実行するときは Actions タブの「Android APK」→「Run workflow」。
 
-署名鍵はリポジトリの Secrets（`KEYSTORE_BASE64` / `KEYSTORE_PASSWORD` / `KEY_ALIAS` / `KEY_PASSWORD`）から読み込みます。
+署名鍵はリポジトリの Secrets（`KEYSTORE_BASE64` / `KEYSTORE_PASSWORD` / `KEY_ALIAS` / `KEY_PASSWORD`）から読み込みます。未登録のときは debug 鍵で署名します。
 
 ## 構成
 
